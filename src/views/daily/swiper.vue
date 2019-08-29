@@ -24,8 +24,6 @@
 import Swiper from 'swiper'
 import swiperItem from './components/swiperItem'
 
-
-
 export default {
   name: 'Swiper',
   components: {
@@ -40,7 +38,7 @@ export default {
   mounted() {
     this.swiperContainer = new Swiper('.swiper-container', {
       /* ... */
-      loop : true,
+      loop: true,
       initialSlide: 1,
       loopAdditionalSlides: -1,
       // 当设置（ loop: true 或 initialSlide 不是第一个 ） 会触发 [Transition/SlideChange] [Start/End]
@@ -61,7 +59,7 @@ export default {
         slidePrevTransitionEnd: () => {
           // alert('切换结束了');
           this.swiperContainer.slideTo(1, 0, false)
-        },
+        }
       }
     })
   }
@@ -75,7 +73,7 @@ export default {
   width: 100%;
   height: 300px;
 }
-.swiper-slide{
+.swiper-slide {
   width: 100%;
 }
 .swiper-slide {

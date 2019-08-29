@@ -7,10 +7,10 @@
 <script>
 export default {
   name: 'SwiperItem',
-  props: ['msg']
+  props: {
+    msg: String
+  }
 }
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>
